@@ -1,0 +1,55 @@
+# Xcode
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+.DS_Store
+
+# Build outputs
+build/
+DerivedData/
+*.o
+*.a
+*.dylib
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Testing outputs
+*.gcda
+*.gcno
+coverage.info
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Logs (keep structure but ignore content in some cases)
+logs/*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
