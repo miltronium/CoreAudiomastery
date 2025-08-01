@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Combined Archive and Commit Script
@@ -412,11 +411,7 @@ Automated milestone: $(date '+%Y-%m-%d %H:%M') ✅"
     echo "----------------------------------------"
     echo
     
-    read -p "Proceed with archive and commit? (y/N): " confirm
-    if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-        log_action "👋 Operation cancelled by user"
-        exit 0
-    fi
+    log_action "🚀 Starting automated archive and commit process"
     
     # Phase 1: Archive scripts to both repositories
     log_action "📦 PHASE 1: Archiving tutorial scripts"
