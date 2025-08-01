@@ -31,7 +31,7 @@ log_git_output() {
     log_action "📊 Exit Code: $exit_code"
 }
 
-# Enhanced git command wrapper
+# Enhanced git command wrapper - FIXED for file arguments
 run_git_command() {
     local cmd="$1"
     local description="$2"
@@ -43,7 +43,8 @@ run_git_command() {
     local output
     local exit_code
     
-    output=$(git $cmd 2>&1) || exit_code=$?
+    # Use eval for proper command expansion
+    output=$(eval "git $cmd" 2>&1) || exit_code=$?
     exit_code=${exit_code:-0}
     
     log_git_output "git $cmd" "$output" "$exit_code"
@@ -154,16 +155,26 @@ commit_and_push() {
     run_git_command "diff --cached --stat" "Show staged changes"
     run_git_command "status --porcelain" "Show staging status"
     
-    # Create commit with detailed output
+    # Create commit with detailed output - FIXED for proper file handling
     log_action "💾 Creating commit"
-    if run_git_command "commit -m \"$commit_message\"" "Create commit"; then
+    
+    # Write commit message to temporary file to handle multi-line properly
+    local temp_commit_file=$(mktemp)
+    echo "$commit_message" > "$temp_commit_file"
+    
+    # Use git commit -F with proper file path (no quotes in the command)
+    if run_git_command "commit -F $temp_commit_file" "Create commit from file"; then
         log_action "✅ Commit created successfully"
+        
+        # Clean up temp file
+        rm -f "$temp_commit_file"
         
         # Show the commit details
         log_action "📄 Commit details:"
         run_git_command "log -1 --stat" "Show latest commit"
     else
         log_action "❌ Failed to create commit"
+        rm -f "$temp_commit_file"
         return 1
     fi
     

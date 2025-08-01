@@ -3,30 +3,15 @@
 ## Contents
 
 ### tutorial-scripts/
-Complete tutorial setup scripts generated for Days 1-2:
-- `step01_create_directories.sh` - Directory structure setup
-- `step02_initialize_repos.sh` - Git repository initialization
-- `step03_setup_environment.sh` - Environment configuration
-- `step04_install_frameworks.sh` - Testing framework installation
+Complete tutorial setup scripts with progression tracking
 
 ### scripts/
-Additional setup and utility scripts:
-- Setup generators and environment scripts
-- Validation and testing utilities
+Additional setup and utility scripts
 
 ### logs/
-Session logs from tutorial setup process:
-- Day 1 and Day 2 session tracking
-- Setup validation logs
-- Environment configuration history
+Session logs from tutorial setup process
 
 ## Usage
 
-These scripts were generated during the tutorial setup process and are archived
-for reference and potential reuse. They represent the complete setup workflow
-for the Core Audio mastery tutorial.
-
-## Next Steps
-
-With setup complete, continue with the main tutorial implementation following
-the study schedule and session structure.
+These scripts represent the complete tutorial workflow and are archived
+for reference and potential reuse.
