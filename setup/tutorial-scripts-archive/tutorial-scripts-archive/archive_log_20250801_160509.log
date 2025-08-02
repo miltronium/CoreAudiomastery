@@ -1,0 +1,23 @@
+[2025-08-01 16:05:09] 🔧 Starting archive script with fixes
+[2025-08-01 16:05:09] 📁 Script directory: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:05:09] 📁 Original directory: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:05:09] 🎯 Starting main archive process
+[2025-08-01 16:05:09] 🔍 Detecting environment configuration
+[2025-08-01 16:05:09] 📍 Found environment file: /Users/miltronius/Development/CoreAudio/.core-audio-env
+[2025-08-01 16:05:18] 📦 Archiving tutorial scripts to CoreAudioMastery
+[2025-08-01 16:05:18] 📄 Copying tutorial scripts from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:05:18] 📊 Copied       16 files to tutorial-scripts archive
+[2025-08-01 16:05:18] 📄 Archiving session logs
+[2025-08-01 16:05:18] ✅ Archive complete: CoreAudioMastery
+[2025-08-01 16:05:18] 📚 Copying scripts to study guide repository
+[2025-08-01 16:05:18] 📄 Tutorial scripts copied to study guide from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:05:18] 📄 Session logs copied to study guide
+[2025-08-01 16:05:18] ✅ Study guide archive complete
+[2025-08-01 16:05:18] 📦 Archiving tutorial scripts to CoreAudioTutorial
+[2025-08-01 16:05:18] 📄 Copying tutorial scripts from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:05:18] 📊 Copied       16 files to tutorial-scripts archive
+[2025-08-01 16:05:18] 📄 Archiving session logs
+[2025-08-01 16:05:18] ✅ Archive complete: CoreAudioTutorial
+[2025-08-01 16:05:18] 🎯 Archived to both repositories
+[2025-08-01 16:05:18] ✅ Archive process completed successfully
+[2025-08-01 16:05:18] 📄 Session log: archive_log_20250801_160509.log

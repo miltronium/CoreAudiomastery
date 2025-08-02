@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Universal Core Audio Test Runner
+set -e
+
+if [[ $# -lt 1 ]]; then
+    echo "Usage: ca-test <language> [test_directory]"
+    echo "Languages: c, cpp, objc, swift"
+    exit 1
+fi
+
+LANGUAGE="$1"
+TEST_DIR="${2:-.}"
+
+# Find test system directory
+TEST_SYSTEM_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/test-system"
+
+case "$LANGUAGE" in
+    c)
+        "$TEST_SYSTEM_DIR/c/run-tests.sh" "$TEST_DIR"
+        ;;
+    cpp|c++)
+        echo "C++ tests not yet implemented"
+        ;;
+    objc|m)
+        echo "Objective-C tests not yet implemented"
+        ;;
+    swift)
+        echo "Swift tests not yet implemented"
+        ;;
+    *)
+        echo "❌ Unknown language: $LANGUAGE"
+        exit 1
+        ;;
+esac

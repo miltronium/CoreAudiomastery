@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Universal Core Audio Build Command
+set -e
+
+if [[ $# -lt 2 ]]; then
+    echo "Usage: ca-build <language> <source_file> [output_name]"
+    echo "Languages: c, cpp, objc, swift"
+    exit 1
+fi
+
+LANGUAGE="$1"
+SOURCE_FILE="$2"
+OUTPUT_NAME="$3"
+
+# Find build system directory
+BUILD_SYSTEM_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/build-system"
+
+case "$LANGUAGE" in
+    c)
+        "$BUILD_SYSTEM_DIR/c/build.sh" "$SOURCE_FILE" "$OUTPUT_NAME"
+        ;;
+    cpp|c++)
+        "$BUILD_SYSTEM_DIR/cpp/build.sh" "$SOURCE_FILE" "$OUTPUT_NAME"
+        ;;
+    objc|m)
+        "$BUILD_SYSTEM_DIR/objc/build.sh" "$SOURCE_FILE" "$OUTPUT_NAME"
+        ;;
+    swift)
+        "$BUILD_SYSTEM_DIR/swift/build.sh" "$SOURCE_FILE" "$OUTPUT_NAME"
+        ;;
+    *)
+        echo "❌ Unknown language: $LANGUAGE"
+        echo "Supported: c, cpp, objc, swift"
+        exit 1
+        ;;
+esac
