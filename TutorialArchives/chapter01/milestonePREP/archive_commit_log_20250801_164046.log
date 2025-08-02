@@ -1,0 +1,32 @@
+[2025-08-01 16:40:46] 🔧 Starting combined archive and commit process
+[2025-08-01 16:40:46] 📁 Script directory: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:40:46] 📁 Original directory: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:40:46] 🎯 Starting combined archive and commit process
+[2025-08-01 16:40:46] 🔍 Detecting environment configuration
+[2025-08-01 16:40:46] 📍 Found environment file: /Users/miltronius/Development/CoreAudio/.core-audio-env
+[2025-08-01 16:40:46] 📁 Repositories to process:
+[2025-08-01 16:40:46]    CoreAudioMastery: /Users/miltronius/Development/CoreAudio/CoreAudioMastery
+[2025-08-01 16:40:46]    CoreAudioTutorial: /Users/miltronius/Development/CoreAudio/CoreAudioTutorial
+[2025-08-01 16:40:46] ✅ Repository exists: /Users/miltronius/Development/CoreAudio/CoreAudioMastery
+[2025-08-01 16:40:46] ✅ Repository exists: /Users/miltronius/Development/CoreAudio/CoreAudioTutorial
+[2025-08-01 16:40:46] 📝 Auto-generated commit message:
+[2025-08-01 16:40:46] 🚀 Starting automated archive and commit process
+[2025-08-01 16:40:46] 📦 PHASE 1: Archiving tutorial scripts
+[2025-08-01 16:40:46] 📦 Archiving tutorial scripts to CoreAudioMastery
+[2025-08-01 16:40:46] 📄 Copying tutorial scripts from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:40:46] 📊 Copied       19 files to tutorial-scripts archive
+[2025-08-01 16:40:46] 📄 Archiving session logs
+[2025-08-01 16:40:47] ✅ Archive complete: CoreAudioMastery
+[2025-08-01 16:40:47] 📚 Copying scripts to study guide repository
+[2025-08-01 16:40:47] 📄 Tutorial scripts copied to study guide from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:40:47] 📄 Session logs copied to study guide
+[2025-08-01 16:40:47] ✅ Study guide archive complete
+[2025-08-01 16:40:47] 📦 Archiving tutorial scripts to CoreAudioTutorial
+[2025-08-01 16:40:47] 📄 Copying tutorial scripts from: /Users/miltronius/tutorial-scripts
+[2025-08-01 16:40:47] 📊 Copied       19 files to tutorial-scripts archive
+[2025-08-01 16:40:47] 📄 Archiving session logs
+[2025-08-01 16:40:47] ✅ Archive complete: CoreAudioTutorial
+[2025-08-01 16:40:47] 💾 PHASE 2: Committing and pushing changes
+[2025-08-01 16:40:47] =
+[2025-08-01 16:40:47] 📦 Processing CoreAudioMastery repository
+[2025-08-01 16:40:47] 📁 Repository path: /Users/miltronius/Development/CoreAudio/CoreAudioMastery
